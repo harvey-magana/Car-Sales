@@ -5,11 +5,18 @@ export const ACTIONS = {
 }
 
 export const ADD_FEATURE = 'ADD_FEATURE';
+export const REMOVE_FEATURE = 'REMOVE_FEATURE';
 
 // This is the action creator, it is a function that creates the action...
 export const addFeature = carFeature => {
     return {
         type: ADD_FEATURE,
         payload: carFeature
+    }
+}
+
+export const removeFeature = () => {
+    return {
+        type: REMOVE_FEATURE
     }
 }

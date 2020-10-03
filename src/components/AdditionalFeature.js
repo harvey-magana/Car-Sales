@@ -3,16 +3,18 @@ import { connect } from 'react-redux';
 import { addFeature } from '../actions/actions';
 
 const mapStateToProps = (props) => {
-  console.log(props)
+  //console.log(props)
   return {
     nameAsProps: props.additionalFeatures.name,
     priceAsProps: props.additionalFeatures.price,
-    carAsProps: props.additionalFeatures.car
+    carAsProps: props.additionalFeatures.car, 
+    carNameAsProps: props.car.name, 
+    carPriceAsProps: props.car.price
   }
 }
 
 const AdditionalFeature = props => {
-  console.log(props)
+  //console.log(props)
 
   return (
     <li>
