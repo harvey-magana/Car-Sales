@@ -46,9 +46,11 @@ import './styles.scss';
 
 const store = createStore(carReducer)
 
+window.store = store;
+
 const rootElement = document.getElementById('root');
 ReactDOM.render(
     <Provider store={store}>
-    <App />
+        <App />
     </Provider>
 , rootElement);
