@@ -7,9 +7,10 @@ import './styles.scss';
 
 // I. Creating a store
 // 1. import { createStore } from 'redux'
-// 2. create reducer function 
-// 3. create store variable const store = createStore(reducer)
-// 4. import { reducer } from './reducers/reducerName'
+// 2. import { reducerName } from '../reducers/reducerName'
+// 3. create reducer function 
+// 4. create store variable const store = createStore(reducer)
+// 5. import { reducer } from './reducers/reducerName'
 
 // II. Add Provider
 // 1. import { Provider } from 'react-redux';
