@@ -6,7 +6,6 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
 const mapStateToProps = (state) => {
-  //console.log(state);
   return {
     carAsProps: state.car,
     additionalFeaturesAsProps: state.additionalFeatures,
