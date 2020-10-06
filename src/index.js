@@ -12,8 +12,7 @@ import './styles.scss';
 // 1. import { createStore } from 'redux'
 // 2. import { reducerName } from '../reducers/reducerName'
 // 3. create reducer function 
-// 4. create store variable const store = createStore(reducer)
-// 5. import { reducer } from './reducers/reducerName'
+// 4. create store variable const store = createStore(reducerName)
 
 // II. Add Provider
 // 1. import { Provider } from 'react-redux';
