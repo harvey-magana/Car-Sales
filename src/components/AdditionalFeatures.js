@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import AdditionalFeature from './AdditionalFeature';
 
 const AdditionalFeatures = props => {
