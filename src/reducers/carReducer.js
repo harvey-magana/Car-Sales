@@ -22,17 +22,16 @@ export const carReducer = (state = initialState, action) => {
 
     switch(action.type) {
       case ADD_FEATURE:
-        //action.payload = feature object
         return {
           ...state,
           car: {
             ...state.car,
-            features: [...state.car.features, action.payload],
+            features: [...state.car.features, action.payload], //update the features array
           },
-          additionalFeatures: state.additionalFeatures.filter(
+          additionalFeatures: state.additionalFeatures.filter( //remove the feature button from the additionalFeatures component
             (feature) => feature.id !== action.payload.id
           ),
-          additionalPrice: state.additionalPrice + action.payload.price,
+          additionalPrice: state.additionalPrice + action.payload.price, //update the price based on addedFeature
         }
         
         case REMOVE_FEATURE: 
